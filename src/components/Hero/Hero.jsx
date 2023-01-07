@@ -1,11 +1,12 @@
-import { HeroHeading, HeroContainer } from "./Hero.styled";
+import { HeroHeading, HeroContainer, HeroText } from "./Hero.styled";
 
 export const Hero = () => {
   return (
     <HeroContainer>
-      <HeroHeading>
-        Nice to see you here! Take a look at my projects
-      </HeroHeading>
+      <HeroText>
+        My name is Inna Forkert. I am a Full Stack developer from Ukraine.
+      </HeroText>
+      <HeroHeading>Nice to see you here!</HeroHeading>
     </HeroContainer>
   );
 };

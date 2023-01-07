@@ -74,3 +74,7 @@ export const HeroContainer = styled.div`
   padding-block: 80px;
   text-align: center;
 `;
+
+export const HeroText = styled.p`
+  color: #f34c19;
+`;
