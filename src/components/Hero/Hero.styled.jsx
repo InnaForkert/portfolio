@@ -71,7 +71,8 @@ export const HeroHeading = styled.h1`
 export const HeroContainer = styled.div`
   width: 100%;
   max-width: 480px;
-  padding-block: 80px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   text-align: center;
 `;
 
