@@ -1,8 +1,15 @@
 import { GrClose } from "react-icons/gr";
 import {
   CardIcon,
+  Cat,
   CrossIcon,
+  Dumpling,
+  Quote,
+  Rain,
   Recording,
+  Reel,
+  Sun,
+  Tick,
 } from "../components/utils/icons.styled";
 
 export const categories = [
@@ -66,6 +73,7 @@ export const categories = [
         link: "https://innaforkert.github.io/vue-shopping-list/",
         git: "https://github.com/InnaForkert/vue-shopping-list",
         ready: true,
+        icon: <Tick />,
       },
       {
         name: "Weather App",
@@ -75,6 +83,8 @@ export const categories = [
         link: "https://myweather16.netlify.app/",
         git: "https://github.com/InnaForkert/Weather-App",
         ready: true,
+        icon: <Rain />,
+        icon2: <Sun />,
       },
       {
         name: "Random Quote Machine",
@@ -83,6 +93,8 @@ export const categories = [
         link: "https://innaforkert.github.io/random-quote-machine",
         git: "https://github.com/InnaForkert/random-quote-machine",
         ready: true,
+        icon: <Quote />,
+        icon2: <Quote />,
       },
       {
         name: "Task List",
@@ -120,6 +132,8 @@ export const categories = [
         link: "https://innaforkert.github.io/kus_prod/",
         git: "https://github.com/InnaForkert/kus_prod",
         ready: true,
+        icon: <Dumpling />,
+        icon2: <Cat />,
       },
       {
         name: "Film Library",
@@ -128,6 +142,7 @@ export const categories = [
         link: "https://veronikanos.github.io/FilmotekaTeamProject",
         git: "https://github.com/Veronikanos/FilmotekaTeamProject",
         ready: true,
+        icon: <Reel />,
       },
       {
         name: "Ice Cream Shop",

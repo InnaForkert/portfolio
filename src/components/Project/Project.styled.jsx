@@ -15,8 +15,9 @@ export const ProjectGrid = styled.div`
 
 export const IconContainer = styled.span`
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ProjectName = styled.a`

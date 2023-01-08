@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ProjectButton,
   ProjectDescription,
@@ -9,8 +10,14 @@ import {
 } from "./Project.styled";
 
 export function Project({
-  project: { name, description, tech, link, git, ready, icon },
+  project: { name, description, tech, link, git, ready, icon, icon2 },
 }) {
+  const [isActive, setIsActive] = useState(false);
+
+  function setActive() {
+    setIsActive((prev) => !prev);
+  }
+
   if (!ready) {
     return null;
   }
@@ -24,7 +31,12 @@ export function Project({
           <ProjectDescription>{description}</ProjectDescription>
           <ProjectTech>{tech}</ProjectTech>
         </ProjectContainer>
-        <IconContainer>{icon}</IconContainer>
+        <IconContainer
+          onClick={setActive}
+          className={`${isActive ? "active" : ""}`}
+        >
+          {icon} {icon2 ?? ""}
+        </IconContainer>
       </ProjectGrid>
       <ProjectButton href={git} target="_blank" rel="noreferrer">
         See GitHub

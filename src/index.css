@@ -14,6 +14,7 @@ body {
   background-color: #fbc40e;
   font-family: "Yeon Sung", cursive;
   color: #e9d8e4;
+  overflow-x: hidden;
 }
 
 h1,
