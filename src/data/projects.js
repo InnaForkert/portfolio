@@ -1,3 +1,6 @@
+import { GrClose } from "react-icons/gr";
+import { CardIcon, CrossIcon } from "../components/utils/icons.styled";
+
 export const categories = [
   {
     Games: [
@@ -8,6 +11,7 @@ export const categories = [
         link: "https://innaforkert.github.io/tetris-game/",
         git: "https://github.com/InnaForkert/tetris-game",
         ready: false,
+        icon: "",
       },
       {
         name: "Tic-Tac-Toe",
@@ -17,6 +21,7 @@ export const categories = [
         link: "https://innaforkert.github.io/tic-tac-toe/",
         git: "https://github.com/InnaForkert/tic-tac-toe",
         ready: true,
+        icon: <CrossIcon />,
       },
       {
         name: "Memory Game",
@@ -25,6 +30,7 @@ export const categories = [
         link: "https://innaforkert.github.io/memory-game/",
         git: "https://github.com/InnaForkert/memory-game",
         ready: true,
+        icon: <CardIcon />,
       },
       {
         name: "",

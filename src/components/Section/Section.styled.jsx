@@ -6,9 +6,18 @@ export const SectionHeader = styled.h3`
   padding: 20px;
   border-radius: 50%;
   transition: color 250ms;
+  width: 100%;
 
   &:hover,
   &:focus {
     color: #f34c19;
   }
+`;
+
+export const SectionContainer = styled.div`
+  width: 100%;
+  max-width: 480px;
+  padding-inline: 20px;
+  display: grid;
+  place-items: center;
 `;

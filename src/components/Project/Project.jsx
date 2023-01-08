@@ -3,22 +3,29 @@ import {
   ProjectDescription,
   ProjectName,
   ProjectTech,
+  ProjectContainer,
+  ProjectGrid,
+  IconContainer,
 } from "./Project.styled";
 
 export function Project({
-  project: { name, description, tech, link, git, ready },
+  project: { name, description, tech, link, git, ready, icon },
 }) {
   if (!ready) {
     return null;
   }
   return (
     <>
-      <ProjectName>{name}</ProjectName>
-      <ProjectDescription>{description}</ProjectDescription>
-      <ProjectTech>{tech}</ProjectTech>
-      <ProjectButton href={link} target="_blank" rel="noreferrer">
-        Visit Page
-      </ProjectButton>
+      <ProjectGrid>
+        <ProjectContainer>
+          <ProjectName target="_blank" rel="noreferrer" href={link}>
+            {name}
+          </ProjectName>
+          <ProjectDescription>{description}</ProjectDescription>
+          <ProjectTech>{tech}</ProjectTech>
+        </ProjectContainer>
+        <IconContainer>{icon}</IconContainer>
+      </ProjectGrid>
       <ProjectButton href={git} target="_blank" rel="noreferrer">
         See GitHub
       </ProjectButton>
