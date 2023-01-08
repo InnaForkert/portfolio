@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blue, orange, white } from "../utils/colors";
+import { blue, orange, white } from "../../utils/colors";
 
 export const ProjectGrid = styled.div`
   display: flex;
