@@ -5,8 +5,8 @@ import { TbPlayCard } from "react-icons/tb";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
 import { RiSingleQuotesR } from "react-icons/ri";
-import { GiDumpling, GiFilmSpool } from "react-icons/gi";
-import { IoLogoOctocat } from "react-icons/io";
+import { GiDumpling, GiIceCreamScoop } from "react-icons/gi";
+import { IoLogoOctocat, IoIosIceCream } from "react-icons/io";
 import { FcFilmReel } from "react-icons/fc";
 
 const upDown = keyframes`
@@ -248,5 +248,42 @@ export const Reel = styled(FcFilmReel)`
   .active & {
     transform: rotate(-90000deg);
     filter: none;
+  }
+`;
+
+export const IceCream = styled(IoIosIceCream)`
+  position: relative;
+  left: 40px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  animation: ${upDown} 4000ms ease-out infinite;
+
+  .active & {
+  }
+`;
+
+export const Spoon = styled(GiIceCreamScoop)`
+  position: relative;
+  top: -80px;
+  left: -20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+  animation: ${upDown} 4000ms ease-out infinite;
+  z-index: -1;
+  color: transparent;
+  transition: top 500ms, color 500ms;
+
+  &:hover {
+    -webkit-animation: 0;
+  }
+
+  ${IceCream}:hover + &,
+  .active & {
+    top: -30px;
+    color: ${white};
   }
 `;

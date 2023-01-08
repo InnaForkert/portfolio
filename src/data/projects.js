@@ -4,10 +4,12 @@ import {
   Cat,
   CrossIcon,
   Dumpling,
+  IceCream,
   Quote,
   Rain,
   Recording,
   Reel,
+  Spoon,
   Sun,
   Tick,
 } from "../components/utils/icons.styled";
@@ -151,6 +153,8 @@ export const categories = [
         link: "https://innaforkert.github.io/team-project-1/",
         git: "https://github.com/InnaForkert/team-project-1",
         ready: true,
+        icon: <IceCream />,
+        icon2: <Spoon />,
       },
       {
         name: "JavaScript Documentation Page",
