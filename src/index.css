@@ -15,6 +15,7 @@ body {
   font-family: "Yeon Sung", cursive;
   color: #e9d8e4;
   overflow-x: hidden;
+  behavior: smooth;
 }
 
 h1,
@@ -22,4 +23,9 @@ h2,
 h3,
 h4 {
   font-family: "Pacifico", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
