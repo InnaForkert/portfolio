@@ -4,7 +4,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Icon>IF</Icon>
+      <Icon onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        IF
+      </Icon>
       <Nav>
         <NavLink to="home" smooth={true}>
           Home

@@ -66,6 +66,13 @@ const moveBackground = keyframes`
 export const HeroHeading = styled.h1`
   color: transparent;
   animation: ${moveBackground} 4000ms linear infinite;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 60px;
+  }
 `;
 
 export const HeroContainer = styled.div`
@@ -74,8 +81,25 @@ export const HeroContainer = styled.div`
   padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
 `;
 
 export const HeroText = styled.p`
   color: #f34c19;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
 `;
