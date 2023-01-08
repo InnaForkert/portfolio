@@ -1,4 +1,4 @@
-import { HeaderContainer, Icon, Nav } from "./Header.styled";
+import { HeaderContainer, Icon, Nav, NavLink } from "./Header.styled";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
@@ -6,15 +6,15 @@ export const Header = () => {
     <HeaderContainer>
       <Icon>IF</Icon>
       <Nav>
-        <Link to="home" smooth={true}>
+        <NavLink to="home" smooth={true}>
           Home
-        </Link>
-        <Link to="projects" smooth={true}>
+        </NavLink>
+        <NavLink to="projects" smooth={true}>
           Projects
-        </Link>
-        <Link to="contacts" smooth={true}>
+        </NavLink>
+        <NavLink to="contacts" smooth={true}>
           Contacts
-        </Link>
+        </NavLink>
       </Nav>
     </HeaderContainer>
   );
