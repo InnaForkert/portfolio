@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blue, orange } from "../utils/colors";
+import { blue, orange } from "../../utils/colors";
 
 export const ContactsContainer = styled.div`
   max-width: 480px;

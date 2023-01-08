@@ -1,5 +1,4 @@
 import { HeaderContainer, Icon, Nav, NavLink } from "./Header.styled";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
   return (
