@@ -1,5 +1,9 @@
 import { GrClose } from "react-icons/gr";
-import { CardIcon, CrossIcon } from "../components/utils/icons.styled";
+import {
+  CardIcon,
+  CrossIcon,
+  Recording,
+} from "../components/utils/icons.styled";
 
 export const categories = [
   {
@@ -39,6 +43,7 @@ export const categories = [
         link: "",
         git: "",
         ready: false,
+        icon: "",
       },
     ],
   },
@@ -52,6 +57,7 @@ export const categories = [
         link: "https://innaforkert.github.io/screen_recorder/",
         git: "https://github.com/InnaForkert/screen_recorder",
         ready: true,
+        icon: <Recording />,
       },
       {
         name: "Shopping List",
