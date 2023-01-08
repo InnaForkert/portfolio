@@ -4,7 +4,7 @@ import { SectionHeader, SectionContainer } from "./Section.styled";
 
 export function Section({ name, projects }) {
   return (
-    <SectionContainer>
+    <SectionContainer id="projects">
       <SectionHeader>{name}</SectionHeader>
       {projects.map((el) => (
         <Project project={el} key={nanoid()} />
