@@ -7,7 +7,9 @@ import {
   ProjectContainer,
   ProjectGrid,
   IconContainer,
+  Diamonds,
 } from "./Project.styled";
+import { GiDiamonds } from "react-icons/gi";
 
 export function Project({
   project: { name, description, tech, link, git, ready, icon, icon2 },

@@ -51,6 +51,7 @@ export const CardIcon = styled(TbPlayCard)`
   transform: rotateY(0);
   cursor: pointer;
   user-select: none;
+  color: black;
   animation: ${upDown} 4000ms linear infinite;
   transition: transform 500ms, filter 2s;
   &:hover {
@@ -71,6 +72,7 @@ export const Recording = styled(VscCircleLargeFilled)`
   user-select: none;
   transition: color 2s cubic-bezier(0.03, 1.17, 0.13, 0.67), filter 2s;
   animation: ${upDown} 4000ms ease-out infinite;
+  color: black;
 
   &:hover {
     -webkit-animation: 0;
@@ -94,9 +96,8 @@ export const Tick = styled(TiTickOutline)`
   user-select: none;
   transition: color 500ms cubic-bezier(0.03, 1.17, 0.13, 0.67), filter 2s;
   animation: ${upDown} 4000ms ease-out infinite;
-
   color: transparent;
-  border: 4px solid ${white};
+  border: 4px solid black;
 
   &:hover {
     -webkit-animation: 0;
@@ -108,7 +109,7 @@ export const Tick = styled(TiTickOutline)`
   }
 
   .active & {
-    color: ${white};
+    color: black;
   }
 `;
 
@@ -137,7 +138,7 @@ export const Rain = styled(TiWeatherShower)`
   .active & {
     left: 30px;
     transform: translateX(0px);
-    color: ${white};
+    color: black;
     animation: ${upDown} 4000ms ease-out infinite;
     animation-delay: 1000ms;
   }
@@ -153,7 +154,7 @@ export const Sun = styled(TiWeatherSunny)`
   user-select: none;
   transition: filter 2s, transform 1s, color 500ms;
   transform: translateX(0px);
-  color: ${white};
+  color: black;
   animation: ${upDown} 4000ms ease-out infinite;
   animation-delay: 1000ms;
 
@@ -180,7 +181,7 @@ export const Quote = styled(RiSingleQuotesR)`
   user-select: none;
   transition: filter 2s, transform 1s cubic-bezier(0.88, 2, 0.26, 0.35),
     color 500ms;
-  color: ${white};
+  color: black;
 
   &:hover {
     -webkit-animation: 0;
@@ -225,6 +226,7 @@ export const Cat = styled(IoLogoOctocat)`
   user-select: none;
   transform: translateX(-140%);
   transition: transform 2s;
+  color: black;
 
   ${Dumpling}:hover + &,
   ${Dumpling}:focus + &,
@@ -259,9 +261,6 @@ export const IceCream = styled(IoIosIceCream)`
   cursor: pointer;
   user-select: none;
   animation: ${upDown} 4000ms ease-out infinite;
-
-  .active & {
-  }
 `;
 
 export const Spoon = styled(GiIceCreamScoop)`
@@ -284,6 +283,6 @@ export const Spoon = styled(GiIceCreamScoop)`
   ${IceCream}:hover + &,
   .active & {
     top: -30px;
-    color: ${white};
+    color: black;
   }
 `;

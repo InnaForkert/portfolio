@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { blue, orange, white } from "../utils/colors";
 
 export const ProjectContainer = styled.div`
-  position: relative;
+  margin-bottom: 15px;
 `;
 
 export const ProjectGrid = styled.div`
@@ -62,7 +62,7 @@ export const ProjectTech = styled.p`
 
 export const ProjectButton = styled.a`
   max-width: 150px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   color: ${blue};
   text-decoration: none;
   align-items: center;

@@ -163,7 +163,7 @@ export const categories = [
         tech: "HTML, CSS, JavaScript",
         link: "https://innaforkert.github.io/fcc-project-3/",
         git: "https://github.com/InnaForkert/fcc-project-3/tree/main",
-        ready: true,
+        ready: false,
       },
       {
         name: "Music Shop Landing",
@@ -172,7 +172,7 @@ export const categories = [
         tech: "HTML, CSS",
         link: "https://innaforkert.github.io/FCC-project-4/",
         git: "https://github.com/InnaForkert/FCC-project-4/tree/main",
-        ready: true,
+        ready: false,
       },
       {
         name: "",
