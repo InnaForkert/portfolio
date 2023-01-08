@@ -7,6 +7,7 @@ export const Hero = () => {
         My name is Inna Forkert. I am a Full Stack developer from Ukraine.
       </HeroText>
       <HeroHeading>Nice to see you here!</HeroHeading>
+      <HeroText>(Try clicking stuff😊)</HeroText>
     </HeroContainer>
   );
 };
