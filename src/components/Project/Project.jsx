@@ -7,9 +7,7 @@ import {
   ProjectContainer,
   ProjectGrid,
   IconContainer,
-  Diamonds,
 } from "./Project.styled";
-import { GiDiamonds } from "react-icons/gi";
 
 export function Project({
   project: { name, description, tech, link, git, ready, icon, icon2 },
@@ -24,25 +22,23 @@ export function Project({
     return null;
   }
   return (
-    <>
-      <ProjectGrid>
-        <ProjectContainer>
-          <ProjectName target="_blank" rel="noreferrer" href={link}>
-            {name}
-          </ProjectName>
-          <ProjectDescription>{description}</ProjectDescription>
-          <ProjectTech>{tech}</ProjectTech>
-        </ProjectContainer>
-        <IconContainer
-          onClick={setActive}
-          className={`${isActive ? "active" : ""}`}
-        >
-          {icon} {icon2 ?? ""}
-        </IconContainer>
-      </ProjectGrid>
-      <ProjectButton href={git} target="_blank" rel="noreferrer">
-        See GitHub
-      </ProjectButton>
-    </>
+    <ProjectGrid>
+      <ProjectContainer>
+        <ProjectName target="_blank" rel="noreferrer" href={link}>
+          {name}
+        </ProjectName>
+        <ProjectDescription>{description}</ProjectDescription>
+        <ProjectTech>{tech}</ProjectTech>
+        <ProjectButton href={git} target="_blank" rel="noreferrer">
+          See GitHub
+        </ProjectButton>
+      </ProjectContainer>
+      <IconContainer
+        onClick={setActive}
+        className={`${isActive ? "active" : ""}`}
+      >
+        {icon} {icon2 ?? ""}
+      </IconContainer>
+    </ProjectGrid>
   );
 }

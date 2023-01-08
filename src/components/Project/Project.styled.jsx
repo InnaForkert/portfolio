@@ -1,23 +1,43 @@
 import styled from "styled-components";
 import { blue, orange, white } from "../utils/colors";
 
-export const ProjectContainer = styled.div`
-  margin-bottom: 15px;
-`;
-
 export const ProjectGrid = styled.div`
   display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    align-items: top;
+  }
+  @media (min-width: 1200px) {
+    width: 45%;
+    align-items: center;
+  }
 
   &:nth-of-type(even) {
     flex-direction: row-reverse;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+`;
+
+export const ProjectContainer = styled.div`
+  margin-bottom: 15px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
   }
 `;
 
 export const IconContainer = styled.span`
-  width: 100%;
+  width: 40vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
 `;
 
 export const ProjectName = styled.a`
@@ -30,17 +50,27 @@ export const ProjectName = styled.a`
   overflow: hidden;
   cursor: pointer;
 
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
+
   &:after {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    /* transform: translateX(-100%); */
     transform: translateX(0);
     content: "";
     background-color: ${orange};
     transition: transform 250ms;
+
+    @media (min-width: 768px) {
+      transform: translateX(-100%);
+    }
   }
 
   &:hover&:after,
@@ -51,6 +81,15 @@ export const ProjectName = styled.a`
 
 export const ProjectDescription = styled.p`
   color: ${blue};
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 1200) {
+    font-size: 24px;
+  }
 `;
 
 export const ProjectTech = styled.p`
@@ -58,11 +97,17 @@ export const ProjectTech = styled.p`
   font-size: 14px;
   font-style: italic;
   margin-bottom: 15px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200) {
+    font-size: 20px;
+  }
 `;
 
 export const ProjectButton = styled.a`
-  max-width: 150px;
-  margin-bottom: 30px;
+  min-width: 120px;
   color: ${blue};
   text-decoration: none;
   align-items: center;
@@ -100,5 +145,9 @@ export const ProjectButton = styled.a`
   &:active {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
   }
 `;

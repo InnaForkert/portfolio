@@ -57,8 +57,7 @@ export const CardIcon = styled(TbPlayCard)`
   &:hover {
     -webkit-animation: 0;
   }
-  &:active,
-  &:focus {
+  .active & {
     transform: rotateY(180deg);
     filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 1px 2px ${orange});
   }
@@ -224,14 +223,14 @@ export const Cat = styled(IoLogoOctocat)`
   height: 40px;
   cursor: pointer;
   user-select: none;
-  transform: translateX(-140%);
+  transform: translateX(-140%) translateY(10px);
   transition: transform 2s;
   color: black;
 
   ${Dumpling}:hover + &,
   ${Dumpling}:focus + &,
   ${Dumpling}:active + & {
-    transform: translateX(-140%) translateY(-40px);
+    transform: translateX(-140%) translateY(-25px);
   }
 `;
 
@@ -250,12 +249,11 @@ export const Reel = styled(FcFilmReel)`
   .active & {
     transform: rotate(-90000deg);
     filter: none;
+    -webkit-animation: 0;
   }
 `;
 
 export const IceCream = styled(IoIosIceCream)`
-  position: relative;
-  left: 40px;
   width: 70px;
   height: 70px;
   cursor: pointer;
@@ -266,7 +264,7 @@ export const IceCream = styled(IoIosIceCream)`
 export const Spoon = styled(GiIceCreamScoop)`
   position: relative;
   top: -80px;
-  left: -20px;
+  left: -60px;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -282,7 +280,7 @@ export const Spoon = styled(GiIceCreamScoop)`
 
   ${IceCream}:hover + &,
   .active & {
-    top: -30px;
+    top: -10px;
     color: black;
   }
 `;

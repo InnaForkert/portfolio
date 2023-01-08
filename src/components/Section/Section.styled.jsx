@@ -39,3 +39,17 @@ export const SectionContainer = styled.div`
     padding-inline: 60px;
   }
 `;
+
+export const ProjectsContainer = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`;

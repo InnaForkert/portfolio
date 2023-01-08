@@ -1,4 +1,3 @@
-import { GrClose } from "react-icons/gr";
 import {
   CardIcon,
   Cat,
@@ -12,7 +11,7 @@ import {
   Spoon,
   Sun,
   Tick,
-} from "../components/utils/icons.styled";
+} from "../utils/icons.styled";
 
 export const categories = [
   {
