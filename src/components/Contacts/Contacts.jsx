@@ -10,41 +10,48 @@ import { SiGmail, SiCodewars } from "react-icons/si";
 import cv from "../Contacts/cv.pdf";
 
 export function Contacts() {
+  const iconSize =
+    window.innerWidth < 480
+      ? 30
+      : window.innerWidth < 768
+      ? 45
+      : window.innerWidth < 1200
+      ? 50
+      : 60;
   return (
     <ContactsContainer id="contacts">
       <ContactsHeader>Contacts</ContactsHeader>
       <Icons>
-        {" "}
         <a href="https://t.me/inna_forkert" target="_blank" rel="noreferrer">
-          <BsTelegram size={30} />
+          <BsTelegram size={iconSize} />
         </a>
         <a
           href="https://www.linkedin.com/in/inna-forkert/"
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillLinkedin size={30} />
+          <AiFillLinkedin size={iconSize} />
         </a>
         <a
           href="mailto:inna.forkert@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          <SiGmail size={30} />
+          <SiGmail size={iconSize} />
         </a>
         <a
           href="https://github.com/InnaForkert"
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillGithub size={30} />
+          <AiFillGithub size={iconSize} />
         </a>
         <a
           href="https://www.codewars.com/users/InnaForkert"
           target="_blank"
           rel="noreferrer"
         >
-          <SiCodewars size={30} />
+          <SiCodewars size={iconSize} />
         </a>
       </Icons>
       <CV href={cv} target="_blank" rel="noreferrer">
