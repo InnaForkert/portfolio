@@ -114,7 +114,7 @@ export const Tick = styled(TiTickOutline)`
 
 export const Rain = styled(TiWeatherShower)`
   position: relative;
-
+  left: 30px;
   filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 4px 3px ${orange});
   width: 70px;
   height: 70px;
@@ -122,7 +122,6 @@ export const Rain = styled(TiWeatherShower)`
   user-select: none;
   transition: filter 2s, transform 1s, color 500ms;
 
-  transform: translateX(40px);
   color: transparent;
 
   &:hover {
@@ -135,8 +134,6 @@ export const Rain = styled(TiWeatherShower)`
   }
 
   .active & {
-    left: 30px;
-    transform: translateX(0px);
     color: black;
     animation: ${upDown} 4000ms ease-out infinite;
     animation-delay: 1000ms;
