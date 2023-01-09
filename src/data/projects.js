@@ -79,8 +79,8 @@ export const categories = [
       {
         name: "Weather App",
         description:
-          "Weather app that has geolocation, city search and unit conversion",
-        tech: "HTML, CSS, JavaScript, API",
+          "Weather app where you can save several cities and see hourly forecast",
+        tech: "React, React Router, Redux Toolkit, Redux Thunk, API, Styled Components",
         link: "https://myweather16.netlify.app/",
         git: "https://github.com/InnaForkert/Weather-App",
         ready: true,
