@@ -6,6 +6,7 @@ export const ProjectGrid = styled.div`
   align-items: center;
   margin-bottom: 30px;
   gap: 20px;
+  justify-content: space-around;
 
   @media (min-width: 768px) {
     align-items: top;
@@ -34,7 +35,7 @@ export const ProjectContainer = styled.div`
 `;
 
 export const IconContainer = styled.span`
-  width: 40vw;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: top;
