@@ -58,6 +58,17 @@ export const categories = [
   {
     "Single Page Applications": [
       {
+        name: "Weather App",
+        description:
+          "Weather app where you can save several cities and see hourly forecast for each",
+        tech: "React, React Router, Redux, Redux Toolkit, Redux Thunk, Jest, React Testing Library, API, Styled Components",
+        link: "https://innaforkert.github.io/weather/",
+        git: "https://github.com/InnaForkert/weather",
+        ready: true,
+        icon: <Rain />,
+        icon2: <Sun />,
+      },
+      {
         name: "Screen Recorder",
         description:
           "App that allows screen video and audio recording. Uses MediaStream Recording API.",
@@ -75,17 +86,6 @@ export const categories = [
         git: "https://github.com/InnaForkert/vue-shopping-list",
         ready: true,
         icon: <Tick />,
-      },
-      {
-        name: "Weather App",
-        description:
-          "Weather app where you can save several cities and see hourly forecast",
-        tech: "React, React Router, Redux Toolkit, Redux Thunk, API, Styled Components",
-        link: "https://myweather16.netlify.app/",
-        git: "https://github.com/InnaForkert/Weather-App",
-        ready: true,
-        icon: <Rain />,
-        icon2: <Sun />,
       },
       {
         name: "Random Quote Machine",
