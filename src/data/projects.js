@@ -61,7 +61,7 @@ export const categories = [
         name: "Weather App",
         description:
           "Weather app where you can save several cities and see hourly forecast for each",
-        tech: "React, React Router, Redux, Redux Toolkit, Redux Thunk, Jest, React Testing Library, API, Styled Components",
+        tech: "React, React Router, Redux, Redux Toolkit, Redux Thunk, TypeScript, Jest, React Testing Library, API, Styled Components",
         link: "https://innaforkert.github.io/weather/",
         git: "https://github.com/InnaForkert/weather",
         ready: true,
