@@ -36,6 +36,16 @@ export const categories = [
         icon: <CrossIcon />,
       },
       {
+        name: "Monster Slayer",
+        description:
+          "Combine different attacks and healing to defeat the monster ⚔",
+        tech: "Vue, HTML, CSS",
+        link: "https://innaforkert.github.io/monster-slayer/",
+        git: "https://github.com/InnaForkert/monster-slayer",
+        ready: false,
+        icon: "",
+      },
+      {
         name: "Memory Game",
         description: "Card-flipping memory game with React",
         tech: "React, Styled Components",
