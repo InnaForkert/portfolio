@@ -1,6 +1,8 @@
 import {
+  Apple,
   CardIcon,
   Cat,
+  Circle,
   CrossIcon,
   Dumpling,
   IceCream,
@@ -85,6 +87,8 @@ export const categories = [
         link: "https://innaforkert.github.io/recipes/",
         git: "https://github.com/InnaForkert/recipes",
         ready: false,
+        icon: <Apple />,
+        icon2: <Circle />,
       },
       {
         name: "Screen Recorder",

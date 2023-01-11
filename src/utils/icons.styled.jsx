@@ -8,6 +8,8 @@ import { RiSingleQuotesR } from "react-icons/ri";
 import { GiDumpling, GiIceCreamScoop } from "react-icons/gi";
 import { IoLogoOctocat, IoIosIceCream } from "react-icons/io";
 import { FcFilmReel } from "react-icons/fc";
+import { AiFillApple } from "react-icons/ai";
+import { GiPlainCircle } from "react-icons/gi";
 
 const upDown = keyframes`
   0% {
@@ -21,6 +23,17 @@ const upDown = keyframes`
   100% {
     transform: translateY(0);
   filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 4px 3px ${orange});
+  }
+`;
+const upDownNoShadow = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
   }
 `;
 
@@ -279,5 +292,45 @@ export const Spoon = styled(GiIceCreamScoop)`
   .active & {
     top: -10px;
     color: black;
+  }
+`;
+
+const bite = keyframes`
+   0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+`;
+
+export const Apple = styled(AiFillApple)`
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+  filter: none;
+  filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 1px 2px ${orange});
+
+  .active & {
+    animation: ${bite} 1500ms cubic-bezier(0.88, 2, 0.26, 0.35);
+  }
+`;
+export const Circle = styled(GiPlainCircle)`
+  position: relative;
+  top: 20px;
+  right: 39px;
+  width: 33px;
+  height: 35px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+
+  .active & {
+    visibility: hidden;
   }
 `;
