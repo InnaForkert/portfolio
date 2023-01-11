@@ -79,6 +79,14 @@ export const categories = [
         icon2: <Sun />,
       },
       {
+        name: "Recipes",
+        description: "Application for saving recipes",
+        tech: "React, CSS, HTML",
+        link: "https://innaforkert.github.io/recipes/",
+        git: "https://github.com/InnaForkert/recipes",
+        ready: false,
+      },
+      {
         name: "Screen Recorder",
         description:
           "App that allows screen video and audio recording. Uses MediaStream Recording API.",
