@@ -7,6 +7,7 @@ export const SectionHeader = styled.h3`
   border-radius: 50%;
   transition: color 250ms;
   width: 100%;
+  cursor: default;
 
   @media (min-width: 768px) {
     font-size: 30px;
