@@ -10,6 +10,7 @@ import { IoLogoOctocat, IoIosIceCream } from "react-icons/io";
 import { FcFilmReel } from "react-icons/fc";
 import { AiFillApple } from "react-icons/ai";
 import { GiPlainCircle } from "react-icons/gi";
+import { ImFire } from "react-icons/im";
 
 const upDown = keyframes`
   0% {
@@ -313,7 +314,6 @@ export const Apple = styled(AiFillApple)`
   cursor: pointer;
   user-select: none;
   color: black;
-  filter: none;
   filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 1px 2px ${orange});
 
   .active & {
@@ -332,5 +332,20 @@ export const Circle = styled(GiPlainCircle)`
 
   .active & {
     visibility: hidden;
+  }
+`;
+
+export const Fire = styled(ImFire)`
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+  transition: transform 20s;
+  z-index: 2;
+  cursor: zoom-in;
+  .active & {
+    transform: scale(200);
+    cursor: zoom-out;
   }
 `;

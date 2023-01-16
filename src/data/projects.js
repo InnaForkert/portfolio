@@ -5,6 +5,7 @@ import {
   Circle,
   CrossIcon,
   Dumpling,
+  Fire,
   IceCream,
   Quote,
   Rain,
@@ -126,6 +127,16 @@ export const categories = [
         link: "",
         git: "https://github.com/InnaForkert/task-list-react-native",
         ready: false,
+      },
+      {
+        name: "Markdown Previewer",
+        description:
+          "App that uses 'Marked' package to preview markdown. Free Code Camp Front End Development Libraries certification project.",
+        tech: "React, Styled Components",
+        link: "https://innaforkert.github.io/markdown-previewer/",
+        git: "https://github.com/InnaForkert/markdown-previewer",
+        ready: true,
+        icon: <Fire />,
       },
       {
         name: "",
