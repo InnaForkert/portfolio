@@ -7,7 +7,9 @@ import {
   ProjectContainer,
   ProjectGrid,
   IconContainer,
+  UnderConstruction,
 } from "./Project.styled";
+import notReady from "../../img/notReady.gif";
 
 export function Project({
   project: { name, description, tech, link, git, ready, icon, icon2 },
@@ -18,9 +20,6 @@ export function Project({
     setIsActive((prev) => !prev);
   }
 
-  if (!ready) {
-    return null;
-  }
   return (
     <ProjectGrid>
       <ProjectContainer>
@@ -37,7 +36,14 @@ export function Project({
         onClick={setActive}
         className={`${isActive ? "active" : ""}`}
       >
-        {icon} {icon2 ?? ""}
+        {ready ? (
+          <>
+            {icon} {icon2 ?? ""}
+          </>
+        ) : (
+          <UnderConstruction src={notReady} alt="under construction" />
+        )}
+        {/* {icon} {icon2 ?? ""} */}
       </IconContainer>
     </ProjectGrid>
   );

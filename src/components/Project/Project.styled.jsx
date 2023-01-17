@@ -152,3 +152,7 @@ export const ProjectButton = styled.a`
     margin-bottom: 0;
   }
 `;
+
+export const UnderConstruction = styled.img`
+  width: 100%;
+`;

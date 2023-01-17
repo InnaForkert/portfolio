@@ -1,5 +1,7 @@
 import {
   Apple,
+  Butterflies,
+  ButterfliesStatic,
   CardIcon,
   Cat,
   Circle,
@@ -15,13 +17,25 @@ import {
   Sun,
   Tick,
 } from "../utils/icons.styled";
+import butterfl from "../img/butterflies.gif";
+import butterflSt from "../img/butterfliesStatic.gif";
 
 export const categories = [
   {
     Games: [
       {
+        name: "Prisoners",
+        description:
+          "A game based on the popular riddle. The final goal of the project is a cooperative online game with 10 active players.",
+        tech: "TypeScript, React, Redux, SASS",
+        link: "https://innaforkert.github.io/tetris-game/",
+        git: "https://github.com/InnaForkert/tetris-game",
+        ready: false,
+        icon: "",
+      },
+      {
         name: "Tennis",
-        description: "Fun tetris-liketennis game",
+        description: "Fun tetris-like tennis game",
         tech: "JavaScript, HTML, CSS",
         link: "https://innaforkert.github.io/tetris-game/",
         git: "https://github.com/InnaForkert/tetris-game",
@@ -58,14 +72,24 @@ export const categories = [
         icon: <CardIcon />,
       },
       {
-        name: "",
-        description: "",
-        tech: "",
+        name: "Guess My Number",
+        description:
+          "React Native game that guesses your number (sooner or later)",
+        tech: "React Native",
         link: "",
-        git: "",
+        git: "https://github.com/InnaForkert/guess-my-number",
         ready: false,
         icon: "",
       },
+      // {
+      //   name: "",
+      //   description: "",
+      //   tech: "",
+      //   link: "",
+      //   git: "",
+      //   ready: false,
+      //   icon: "",
+      // },
     ],
   },
   {
@@ -84,7 +108,7 @@ export const categories = [
       {
         name: "Recipes",
         description: "Application for saving recipes",
-        tech: "React, CSS, HTML",
+        tech: "React, CSS",
         link: "https://innaforkert.github.io/recipes/",
         git: "https://github.com/InnaForkert/recipes",
         ready: false,
@@ -138,14 +162,14 @@ export const categories = [
         ready: true,
         icon: <Fire />,
       },
-      {
-        name: "",
-        description: "",
-        tech: "",
-        link: "",
-        git: "",
-        ready: false,
-      },
+      // {
+      //   name: "",
+      //   description: "",
+      //   tech: "",
+      //   link: "",
+      //   git: "",
+      //   ready: false,
+      // },
     ],
   },
   {
@@ -154,10 +178,12 @@ export const categories = [
         name: "Tulktranslate",
         description:
           "A website for Ukrainian translation of 'Heaven Official's Blessing' manga",
-        tech: "React, HTML, Styled Components",
+        tech: "React, Styled Components",
         link: "https://innaforkert.github.io/agrotulka",
         git: "https://github.com/InnaForkert/agrotulka",
-        ready: false,
+        ready: true,
+        icon: <Butterflies src={butterfl} />,
+        icon2: <ButterfliesStatic src={butterflSt} />,
       },
       {
         name: "Lasyi Kus",
@@ -188,32 +214,32 @@ export const categories = [
         icon: <IceCream />,
         icon2: <Spoon />,
       },
-      {
-        name: "JavaScript Documentation Page",
-        description:
-          "Created as part of freeCodeCamp JavaScript Certification.",
-        tech: "HTML, CSS, JavaScript",
-        link: "https://innaforkert.github.io/fcc-project-3/",
-        git: "https://github.com/InnaForkert/fcc-project-3/tree/main",
-        ready: false,
-      },
-      {
-        name: "Music Shop Landing",
-        description:
-          "Created as a part of freeCodeCamp Responsive Web Design Certiifcation",
-        tech: "HTML, CSS",
-        link: "https://innaforkert.github.io/FCC-project-4/",
-        git: "https://github.com/InnaForkert/FCC-project-4/tree/main",
-        ready: false,
-      },
-      {
-        name: "",
-        description: "",
-        tech: "",
-        link: "",
-        git: "",
-        ready: false,
-      },
+      // {
+      //   name: "JavaScript Documentation Page",
+      //   description:
+      //     "Created as part of freeCodeCamp JavaScript Certification.",
+      //   tech: "HTML, CSS, JavaScript",
+      //   link: "https://innaforkert.github.io/fcc-project-3/",
+      //   git: "https://github.com/InnaForkert/fcc-project-3/tree/main",
+      //   ready: false,
+      // },
+      // {
+      //   name: "Music Shop Landing",
+      //   description:
+      //     "Created as a part of freeCodeCamp Responsive Web Design Certiifcation",
+      //   tech: "HTML, CSS",
+      //   link: "https://innaforkert.github.io/FCC-project-4/",
+      //   git: "https://github.com/InnaForkert/FCC-project-4/tree/main",
+      //   ready: false,
+      // },
+      // {
+      //   name: "",
+      //   description: "",
+      //   tech: "",
+      //   link: "",
+      //   git: "",
+      //   ready: false,
+      // },
     ],
   },
 ];

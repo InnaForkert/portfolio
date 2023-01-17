@@ -349,3 +349,20 @@ export const Fire = styled(ImFire)`
     cursor: zoom-out;
   }
 `;
+
+export const Butterflies = styled.img`
+  position: absolute;
+  opacity: 0;
+  transition: opacity 500ms;
+  .active & {
+    opacity: 1;
+  }
+`;
+export const ButterfliesStatic = styled.img`
+  opacity: 1;
+  transition: opacity 500ms;
+
+  .active & {
+    opacity: 0;
+  }
+`;
