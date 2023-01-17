@@ -28,8 +28,8 @@ export const categories = [
         description:
           "A game based on the popular riddle. The final goal of the project is a cooperative online game with 10 active players.",
         tech: "TypeScript, React, Redux, SASS",
-        link: "https://innaforkert.github.io/tetris-game/",
-        git: "https://github.com/InnaForkert/tetris-game",
+        link: "https://nulevii.github.io/Prisoners_Game/",
+        git: "https://github.com/nulevii/Prisoners_Game",
         ready: false,
         icon: "",
       },
