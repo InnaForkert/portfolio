@@ -22,6 +22,7 @@ export const ContactsHeader = styled.h2`
   text-align: center;
   color: ${orange};
   margin-bottom: 15px;
+  cursor: default;
 
   @media (min-width: 768px) {
     font-size: 30px;

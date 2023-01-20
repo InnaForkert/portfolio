@@ -342,7 +342,7 @@ export const Fire = styled(ImFire)`
   user-select: none;
   color: black;
   transition: transform 20s;
-  z-index: 2;
+  z-index: 1;
   cursor: zoom-in;
   .active & {
     transform: scale(200);
@@ -354,6 +354,7 @@ export const Butterflies = styled.img`
   position: absolute;
   opacity: 0;
   transition: opacity 500ms;
+  cursor: pointer;
   .active & {
     opacity: 1;
   }
@@ -361,6 +362,7 @@ export const Butterflies = styled.img`
 export const ButterfliesStatic = styled.img`
   opacity: 1;
   transition: opacity 500ms;
+  cursor: pointer;
 
   .active & {
     opacity: 0;
