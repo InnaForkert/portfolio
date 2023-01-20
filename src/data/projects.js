@@ -7,7 +7,6 @@ import {
   Circle,
   CrossIcon,
   Dumpling,
-  Fire,
   IceCream,
   Quote,
   Rain,
@@ -15,6 +14,8 @@ import {
   Reel,
   Spoon,
   Sun,
+  Tag,
+  Tag2,
   Tick,
 } from "../utils/icons.styled";
 import butterfl from "../img/butterflies.gif";
@@ -160,7 +161,8 @@ export const categories = [
         link: "https://innaforkert.github.io/markdown-previewer/",
         git: "https://github.com/InnaForkert/markdown-previewer",
         ready: true,
-        icon: <Fire />,
+        icon: <Tag />,
+        icon2: <Tag2 />,
       },
       // {
       //   name: "",

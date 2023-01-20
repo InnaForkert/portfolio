@@ -1,7 +1,7 @@
 import { orange, white } from "./colors";
 import styled, { keyframes } from "styled-components";
 import { GrClose } from "react-icons/gr";
-import { TbPlayCard } from "react-icons/tb";
+import { TbPlayCard, TbLetterP } from "react-icons/tb";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
 import { RiSingleQuotesR } from "react-icons/ri";
@@ -10,7 +10,7 @@ import { IoLogoOctocat, IoIosIceCream } from "react-icons/io";
 import { FcFilmReel } from "react-icons/fc";
 import { AiFillApple } from "react-icons/ai";
 import { GiPlainCircle } from "react-icons/gi";
-import { ImFire } from "react-icons/im";
+// import { ImFire } from "react-icons/im";
 
 const upDown = keyframes`
   0% {
@@ -335,20 +335,56 @@ export const Circle = styled(GiPlainCircle)`
   }
 `;
 
-export const Fire = styled(ImFire)`
-  width: 10px;
-  height: 10px;
+// export const Fire = styled(ImFire)`
+//   width: 10px;
+//   height: 10px;
+//   cursor: pointer;
+//   user-select: none;
+//   color: black;
+//   transition: transform 20s;
+//   z-index: 1;
+//   cursor: zoom-in;
+//   .active & {
+//     transform: scale(200);
+//     cursor: zoom-out;
+//   }
+// `;
+
+export const Tag = styled.p`
+  height: 70px;
   cursor: pointer;
   user-select: none;
   color: black;
-  transition: transform 20s;
-  z-index: 1;
-  cursor: zoom-in;
-  .active & {
-    transform: scale(200);
-    cursor: zoom-out;
+  animation: ${upDown} 4000ms ease-out infinite;
+  opacity: 0;
+  font-size: 24px;
+
+  &::before {
+    content: "Hello World!"
   }
-`;
+
+    .active & {
+    opacity: 1;
+  }
+  `;
+  
+export const Tag2 = styled.p`
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  animation: ${upDown} 4000ms ease-out infinite;
+  color: black;
+  font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  
+  &::before {
+    content: "<p>Hello World!</p>";
+  }
+
+  .active & {
+    opacity: 0;
+  }
+  `;
 
 export const Butterflies = styled.img`
   position: absolute;
