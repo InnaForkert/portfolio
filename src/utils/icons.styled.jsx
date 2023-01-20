@@ -1,7 +1,7 @@
 import { orange, white } from "./colors";
 import styled, { keyframes } from "styled-components";
 import { GrClose } from "react-icons/gr";
-import { TbPlayCard, TbLetterP } from "react-icons/tb";
+import { TbPlayCard } from "react-icons/tb";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
 import { RiSingleQuotesR } from "react-icons/ri";
@@ -26,17 +26,17 @@ const upDown = keyframes`
   filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 4px 3px ${orange});
   }
 `;
-const upDownNoShadow = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(7px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
+// const upDownNoShadow = keyframes`
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(7px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// `;
 
 export const CrossIcon = styled(GrClose)`
   filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 4px 3px ${orange});
