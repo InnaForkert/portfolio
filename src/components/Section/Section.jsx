@@ -6,14 +6,16 @@ import {
   ProjectsContainer,
 } from "./Section.styled";
 
-export function Section({ name, projects }) {
+export function Section({ name, projects, show }) {
   return (
     <SectionContainer id="projects">
       <SectionHeader>{name}</SectionHeader>
       <ProjectsContainer>
-        {projects.map((el) => (
-          <Project project={el} key={nanoid()} />
-        ))}
+        {show
+          ? projects.map((el) => <Project project={el} key={nanoid()} />)
+          : projects
+              .filter((el) => el.ready)
+              .map((el) => <Project project={el} key={nanoid()} />)}
       </ProjectsContainer>
     </SectionContainer>
   );
