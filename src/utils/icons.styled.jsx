@@ -5,12 +5,21 @@ import { TbPlayCard } from "react-icons/tb";
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
 import { RiSingleQuotesR } from "react-icons/ri";
-import { GiDumpling, GiIceCreamScoop } from "react-icons/gi";
+import {
+  GiDumpling,
+  GiIceCreamScoop,
+  GiMonsterGrasp,
+  GiDrumKit,
+} from "react-icons/gi";
 import { IoLogoOctocat, IoIosIceCream } from "react-icons/io";
 import { FcFilmReel } from "react-icons/fc";
 import { AiFillApple } from "react-icons/ai";
 import { GiPlainCircle } from "react-icons/gi";
 // import { ImFire } from "react-icons/im";
+
+import useSound from "use-sound";
+import sound from "../data/sound.mp3";
+import { useState } from "react";
 
 const upDown = keyframes`
   0% {
@@ -193,10 +202,6 @@ export const Quote = styled(RiSingleQuotesR)`
     color 500ms;
   color: black;
 
-  &:hover {
-    -webkit-animation: 0;
-  }
-
   &:active,
   &:focus {
     filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 1px 2px ${orange});
@@ -204,7 +209,6 @@ export const Quote = styled(RiSingleQuotesR)`
 
   .active & {
     transform: rotate(180deg);
-    -webkit-animation: 0;
   }
 `;
 
@@ -360,23 +364,23 @@ export const Tag = styled.p`
   font-size: 24px;
 
   &::before {
-    content: "Hello World!"
+    content: "Hello World!";
   }
 
-    .active & {
+  .active & {
     opacity: 1;
   }
-  `;
-  
+`;
+
 export const Tag2 = styled.p`
   height: 70px;
   cursor: pointer;
   user-select: none;
   animation: ${upDown} 4000ms ease-out infinite;
   color: black;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   position: absolute;
-  
+
   &::before {
     content: "<p>Hello World!</p>";
   }
@@ -384,13 +388,15 @@ export const Tag2 = styled.p`
   .active & {
     opacity: 0;
   }
-  `;
+`;
 
 export const Butterflies = styled.img`
   position: absolute;
   opacity: 0;
   transition: opacity 500ms;
   cursor: pointer;
+  animation: ${upDown} 4000ms ease-out infinite;
+
   .active & {
     opacity: 1;
   }
@@ -399,8 +405,59 @@ export const ButterfliesStatic = styled.img`
   opacity: 1;
   transition: opacity 500ms;
   cursor: pointer;
+  animation: ${upDown} 4000ms ease-out infinite;
 
   .active & {
     opacity: 0;
   }
 `;
+
+const monster = keyframes`
+  50% {
+   transform: rotate(30deg) translate(60px, 20px) skew(-20deg, 20deg);
+    filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(2px 8px 6px ${orange});
+  }
+`;
+
+export const Monster = styled(GiMonsterGrasp)`
+  display: block;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  animation: ${upDown} 4000ms ease-out infinite;
+  color: black;
+  transform: rotate(0);
+
+  .active & {
+    animation: ${monster} 500ms;
+    filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(1px 4px 3px ${orange});
+  }
+`;
+
+const DrumsIcon = styled(GiDrumKit)`
+  display: block;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  animation: ${upDown} 4000ms ease-out infinite;
+  color: black;
+`;
+
+export const Drums = () => {
+  const [play, { stop }] = useSound(sound);
+  const [playing, setPlaying] = useState(false);
+
+  function toggleMusic() {
+    if (playing) {
+      stop();
+      setPlaying(false);
+    } else {
+      play();
+      setPlaying(true);
+    }
+  }
+
+  return <DrumsIcon onClick={toggleMusic} />;
+};
