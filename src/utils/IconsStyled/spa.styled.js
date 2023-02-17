@@ -172,7 +172,7 @@ const Calling = styled(GiVibratingSmartphone)`
 
 export const CallingPhone = () => {
   function vibrate() {
-    navigator.vibrate(200);
+    window.navigator.vibrate(200);
   }
 
   return (
