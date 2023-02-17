@@ -1,27 +1,31 @@
 import {
-  Apple,
-  Butterflies,
-  ButterfliesStatic,
   CardIcon,
-  Cat,
-  Circle,
   CrossIcon,
   Drums,
-  Dumpling,
-  IceCream,
   Monster,
+} from "../utils/IconsStyled/games.styled";
+import butterfl from "../img/butterflies.gif";
+import butterflSt from "../img/butterfliesStatic.gif";
+import {
+  Apple,
+  Circle,
   Quote,
   Rain,
   Recording,
-  Reel,
-  Spoon,
   Sun,
   Tag,
   Tag2,
   Tick,
-} from "../utils/icons.styled";
-import butterfl from "../img/butterflies.gif";
-import butterflSt from "../img/butterfliesStatic.gif";
+} from "../utils/IconsStyled/spa.styled";
+import {
+  Butterflies,
+  ButterfliesStatic,
+  Cat,
+  Dumpling,
+  IceCream,
+  Reel,
+  Spoon,
+} from "../utils/IconsStyled/landing.styled";
 
 export const categories = [
   {
