@@ -171,8 +171,13 @@ const Calling = styled(GiVibratingSmartphone)`
 `;
 
 export const CallingPhone = () => {
+  navigator.vibrate =
+    navigator.vibrate ||
+    navigator.webkitVibrate ||
+    navigator.mozVibrate ||
+    navigator.msVibrate;
   function vibrate() {
-    window.navigator.vibrate(200);
+    navigator.vibrate(200);
   }
 
   return (
