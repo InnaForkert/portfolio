@@ -79,7 +79,8 @@ export const Sun = styled(TiWeatherSunny)`
 `;
 
 export const Quote = styled(RiSingleQuotesR)`
-  ${Icon}
+  ${Icon};
+  animation: 0;
   transition: filter 2s, transform 1s cubic-bezier(0.88, 2, 0.26, 0.35),
     color 500ms;
 
