@@ -34,3 +34,24 @@ export const monster = keyframes`
     filter: drop-shadow(1px 1px 1px ${white}) drop-shadow(2px 8px 6px ${orange});
   }
 `;
+
+export const drop = keyframes`
+  35% {
+    opacity: 1;
+  }
+  36%{
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50px, 30px);
+  }
+`;
+
+export const call = keyframes`
+  30% {
+    transform: rotate(15deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+`;

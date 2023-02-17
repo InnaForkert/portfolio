@@ -3,10 +3,16 @@ import styled from "styled-components";
 import { Icon } from "./mixins.styled";
 import { orange } from "../colors";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
-import { bite, upDown } from "./keyframes.styled";
+import { bite, call, drop, upDown } from "./keyframes.styled";
 import { RiSingleQuotesR } from "react-icons/ri";
 import { AiFillApple } from "react-icons/ai";
-import { GiPlainCircle } from "react-icons/gi";
+import {
+  GiPlainCircle,
+  GiSmartphone,
+  GiVibratingSmartphone,
+} from "react-icons/gi";
+import { CiWallet } from "react-icons/ci";
+import { BsCoin } from "react-icons/bs";
 
 export const Recording = styled(VscCircleLargeFilled)`
   ${Icon};
@@ -129,3 +135,50 @@ export const Tag2 = styled.p`
     opacity: 0;
   }
 `;
+
+export const Wallet = styled(CiWallet)`
+  ${Icon};
+`;
+
+export const Coin = styled(BsCoin)`
+  color: black;
+  transform: translate(-50px, -60px);
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+
+  .active & {
+    animation: ${drop} 1s;
+  }
+`;
+
+const Phone = styled(GiSmartphone)`
+  ${Icon};
+
+  .active & {
+    display: none;
+  }
+`;
+
+const Calling = styled(GiVibratingSmartphone)`
+  ${Icon};
+  display: none;
+  animation: ${call} 250ms infinite;
+
+  .active & {
+    display: block;
+  }
+`;
+
+export const CallingPhone = () => {
+  function vibrate() {
+    navigator.vibrate(200);
+  }
+
+  return (
+    <>
+      <Phone onClick={vibrate} />
+      <Calling />
+    </>
+  );
+};

@@ -8,7 +8,9 @@ import butterfl from "../img/butterflies.gif";
 import butterflSt from "../img/butterfliesStatic.gif";
 import {
   Apple,
+  CallingPhone,
   Circle,
+  Coin,
   Quote,
   Rain,
   Recording,
@@ -16,6 +18,7 @@ import {
   Tag,
   Tag2,
   Tick,
+  Wallet,
 } from "../utils/IconsStyled/spa.styled";
 import {
   Butterflies,
@@ -120,6 +123,26 @@ export const categories = [
         ready: true,
         icon: <Rain />,
         icon2: <Sun />,
+      },
+      {
+        name: "Wallet",
+        description:
+          "Team project at GoIT Bootcamp. It allows you to comfortably track your expenses",
+        tech: "React, React Router, Redux Toolkit, Redux Persist, API, Styled Components",
+        link: "https://innaforkert.github.io/react-team-project",
+        git: "https://github.com/InnaForkert/react-team-project",
+        ready: true,
+        icon: <Wallet />,
+        icon2: <Coin />,
+      },
+      {
+        name: "Phonebook",
+        description: "Case you don't have one in your smartphone:)",
+        tech: "React, React Router, Redux Toolkit, Redux Persist, API, Styled Components",
+        link: "https://innaforkert.github.io/goit-react-hw-08-phonebook/",
+        git: "https://github.com/InnaForkert/goit-react-hw-08-phonebook",
+        ready: true,
+        icon: <CallingPhone />,
       },
       {
         name: "Recipes",
