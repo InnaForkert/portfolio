@@ -178,7 +178,9 @@ export const CallingPhone = () => {
     navigator.mozVibrate ||
     navigator.msVibrate;
   function vibrate() {
-    navigator.vibrate(200);
+    navigator.vibrate([
+      125, 75, 125, 275, 200, 275, 125, 75, 125, 275, 200, 600, 200, 600,
+    ]);
   }
 
   return (
