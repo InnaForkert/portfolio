@@ -1,4 +1,5 @@
 import {
+  Alarm,
   CardIcon,
   CrossIcon,
   Drums,
@@ -11,6 +12,8 @@ import {
   CallingPhone,
   Circle,
   Coin,
+  ColorWheel,
+  Colors,
   Quote,
   Rain,
   Recording,
@@ -40,8 +43,8 @@ export const categories = [
         tech: "TypeScript, React, Redux, SASS",
         link: "https://nulevii.github.io/Prisoners_Game/",
         git: "https://github.com/nulevii/Prisoners_Game",
-        ready: false,
-        icon: "",
+        ready: true,
+        icon: <Alarm />,
       },
       {
         name: "Tennis",
@@ -112,7 +115,7 @@ export const categories = [
     ],
   },
   {
-    "Single Page Applications": [
+    "Applications": [
       {
         name: "Weather App",
         description:
@@ -201,6 +204,17 @@ export const categories = [
         ready: true,
         icon: <Tag />,
         icon2: <Tag2 />,
+      },
+      {
+        name: "Gradient Generator",
+        description:
+          "Choose a nice gradient for your website!",
+        tech: "Vue",
+        link: "https://innaforkert.github.io/color-picker/",
+        git: "https://github.com/InnaForkert/color-picker",
+        ready: true,
+        icon: <ColorWheel />,
+        icon2: <Colors />,
       },
       // {
       //   name: "",

@@ -1,7 +1,7 @@
 import { VscCircleLargeFilled } from "react-icons/vsc";
 import styled from "styled-components";
 import { Icon } from "./mixins.styled";
-import { orange } from "../colors";
+import { orange, white } from "../colors";
 import { TiTickOutline, TiWeatherShower, TiWeatherSunny } from "react-icons/ti";
 import { bite, call, drop, upDown } from "./keyframes.styled";
 import { RiSingleQuotesR } from "react-icons/ri";
@@ -13,6 +13,42 @@ import {
 } from "react-icons/gi";
 import { CiWallet } from "react-icons/ci";
 import { BsCoin } from "react-icons/bs";
+import {
+  RxColorWheel
+} from 'react-icons/rx';
+
+export const ColorWheel = styled(
+  RxColorWheel
+)`
+  ${Icon};
+  position: relative;
+  transition: rotate 14s;
+  animation: 0;
+  filter: none;
+
+  .active & {
+    rotate: 36000deg;
+  }
+`;
+
+export const Colors = styled.div`
+  ${Icon};
+  position: relative;
+  right: 65px;
+  top: 5px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: rotate 14s;
+  background: conic-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);;
+  animation: 0;
+  filter: none;
+
+  .active & {
+    rotate: 36000deg;
+  }
+  `;
 
 export const Recording = styled(VscCircleLargeFilled)`
   ${Icon};

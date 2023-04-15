@@ -55,3 +55,12 @@ export const call = keyframes`
     transform: rotate(-15deg);
   }
 `;
+
+export const alarm = keyframes`
+0% {
+  color: black
+}
+100% {
+  color: red
+}
+`;

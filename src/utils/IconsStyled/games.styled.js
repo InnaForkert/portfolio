@@ -3,10 +3,19 @@ import styled from "styled-components";
 import { Icon } from "./mixins.styled";
 import { TbPlayCard } from "react-icons/tb";
 import { GiDrumKit, GiMonsterGrasp } from "react-icons/gi";
-import { monster } from "./keyframes.styled";
+import { alarm, monster } from "./keyframes.styled";
 import useSound from "use-sound";
 import sound from "../../data/sound.mp3";
 import { useState } from "react";
+import { RiAlarmWarningFill } from "react-icons/ri";
+
+export const Alarm = styled(RiAlarmWarningFill)`
+  ${Icon} 
+
+  .active & {
+    animation: ${alarm} 1s linear infinite alternate;
+  }
+`;
 
 export const CrossIcon = styled(GrClose)`
   ${Icon}
